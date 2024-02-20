@@ -125,7 +125,7 @@ bool Unit::isDead(){
 }
 
 Equipment::Equipment(int h, int a, int d){
-    hpmax = h;
+     	hpmax = h;
 	atk = a;
 	def = d;
 }
