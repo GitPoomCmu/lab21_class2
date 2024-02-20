@@ -87,7 +87,7 @@ int Unit::beAttacked(int oppatk){
 		if(guard_on) dmg = dmg/3;
 		if(dodge_on){
 		    int temp = rand()%2;
-		    dmg *= (temp==0) ? 2 : 0;
+		    dmg *= (temp==1) ? 2 : 0;
 		}
 	}	
 	hp -= dmg;
@@ -125,7 +125,7 @@ bool Unit::isDead(){
 }
 
 Equipment::Equipment(int h, int a, int d){
-     	hpmax = h;
+    hpmax = h;
 	atk = a;
 	def = d;
 }
